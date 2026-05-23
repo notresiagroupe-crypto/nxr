@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "builds": [{ "src": "**/*.html", "use": "@vercel/static" }],
+  "routes": [
+    { "src": "/demos/(.*)", "dest": "/demos/$1" },
+    { "src": "/(.*)", "dest": "/$1" }
+  ]
+}
